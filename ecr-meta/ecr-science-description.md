@@ -12,9 +12,12 @@ This plugin will process Velocity Azimuth Display scans from Halo Photonics Dopp
     --lidar_ip_addr: Lidar's IP address
     --lidar_uname: Lidar's username
     --lidar_pwd: Lidar's password
-    --nfft: Number of points in FFT (default=1024)
-    --processing_interval: Number of samples per file (default 200)
-    --processing_time: Time period to process in YYYYMMDD.HH (default latest)
+    --profname: Name of the scan type to use (VAD, User1, etc.)
+    --site: The name of the site for filenames.
+    --lat: The site latitude
+    --lon: The site longitude
+    --alt: The site altitude
+    --intensity-threshold: The intensity threshold for processing the data.
 
 # Data description
 The plugin will upload two different types of files for the "upload" variable. One netCDF file containing the processed VAD data. The following variables are provided in this netCDF file:
